@@ -1,0 +1,186 @@
+/* styles.css */
+body {
+  padding-top: 100px;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: transform 0.3s ease-in-out;
+  z-index: 9999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 120px;
+  padding: 0 20px;
+  width: 100%;
+}
+.header.hidden {
+  transform: translateY(-100%);
+  transition: transform 0.3s ease-in-out;
+}
+
+.footer {
+  background-color: #f4f4f4;
+  /* text-align: center; */
+  /* padding: 10px 0; */
+}
+
+.header .logo {
+  float: left;
+  padding: 10px;
+  font-family: 'appleFont';
+}
+.logo {
+  display: block;
+}
+
+.header .menu {
+  float: right;
+  padding: 10px;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+
+.main-img, .sub-img {
+  width: 100%;
+  height: 200px;
+  background-color: #ddd;
+  margin-bottom: 10px;
+}
+
+.content, .sub-body {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.board, .content1, .content2, .content {
+  background-color: #eee;
+  padding: 10px;
+  margin: 5px;
+  flex: 1;
+}
+
+/* footer */
+.footer {
+  position: relative;
+  bottom: 0;
+  padding: 20px 40px;
+  background-color: #f4f4f4;
+}
+.footer_message > a {
+  text-decoration-line: none;
+  color: #666666;
+  font-size: 14px;
+}
+.footer_message {
+  display: flex;
+  gap: 30px;
+  padding: 20px 0;
+}
+.footer hr {
+  /* border: none; */
+  border-top: 1px solid ;
+  margin: 0;
+}
+
+.footer_company {
+    padding: 20px 0;
+}
+
+.footer_company h4 {
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.footer_company p {
+    color: #666666;
+    font-size: 13px;
+    line-height: 1.6;
+    margin: 5px 0;
+}
+
+.footer_client_message {
+    padding: 20px 0;
+}
+
+.footer_client_message h4 {
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.footer_client_message p {
+    color: #666666;
+    font-size: 13px;
+    line-height: 1.6;
+    margin: 5px 0;
+}
+
+/* 반응형 설정 */
+@media (max-width: 768px) {
+  .content, .sub-body {
+    flex-direction: column;
+  }
+}
+
+/* 전역 폰트 */
+@font-face {
+    font-family: 'appleFont';
+    src: url('../font/MUNGYEONG-GAMHONG-APPLE.TTF');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bernier';
+    src: url('/Bernier/Bernier/Commercial/OTF/BERNIERRegular-Regular.otf') format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+/* loading font */
+@font-face {
+    font-family: 'Cafe24Meongi-B-v1.0';
+    src: url('../font/Cafe24Meongi-B-v1.0.woff2') format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Cafe24Decobox';
+    src: url('../font/Cafe24Decobox.ttf') format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Yeongdeok Sea';
+    src: url('../Yeongdeok\ Sea.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'GmarketSansLight';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff') format('woff');
+    font-weight: lighter;
+    font-style: light;
+}
+
+:root {
+    --main-font1 : 'Cafe24Meongi-B-v1.0';
+    --main-color1: #FEF9EA;
+    --main-color2: #AB8262;
+}
