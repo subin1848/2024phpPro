@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <!-- Bootstrap CSS -->
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/index.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon_hand.ico" type="image/x-icon">
+    <title>MOA-DAMA</title>
+    <style>
+        .circle-icon img {
+          width: 100%;
+          height: auto;
+          border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <header class="header" id="main-header">
+        <div>
+            <a href="#" class="logo">
+                <img src="./img/logo/logo.png" alt="logo" style="width: 100px; height: 100px;">
+                <!-- MOA-DAMA -->
+            </a>
+        </div>
+        <div class="line">
+            <form class="search-box" action="#" method="post">
+                <input class="search_txt" type="text" placeholder="검색어를 입력하세요.">
+                <button class="search_btn" type="submit">
+                    <i class="bi bi-search"></i>
+                </button>
+            </form>
+            <form action="#" method="post">
+                <button class="account_btn" type="submit">
+                    <i class="bi bi-person-circle"></i>
+                </button>
+            </form>
+        </div>
+    </header>
+    <main class="main">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="carousel-banner d-flex align-items-center">
+                        <div class="carousel-content col-md-6">
+                            <h2>매일매일 100% 당첨되는<br>출석체크 이벤트</h2>
+                            <p>만날수록 혜택이 커져요</p>
+                        </div>
+                        <div class="carousel-image col-md-6">
+                            <img src="./img/banner/check_banner.png" alt="출석체크" class="c">
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <!-- 두 번째 슬라이드의 내용 -->
+                    <div class="carousel-banner d-flex align-items-center">
+                        <div class="carousel-content col-md-6">
+                            <h2>신규 가입 이벤트</h2>
+                            <p>새로운 회원님을 위한 특별한 혜택</p>
+                        </div>
+                        <div class="carousel-image col-md-6">
+                            <img src="./img/banner/new_event_banner.png" alt="신규가입" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <!-- 세 번째 슬라이드의 내용 -->
+                    <div class="carousel-banner d-flex align-items-center">
+                        <div class="carousel-content col-md-6">
+                            <h2>이달의 이벤트</h2>
+                            <p>다양한 이벤트에 참여하세요</p>
+                        </div>
+                        <div class="carousel-image col-md-6">
+                            <img src="./img/banner/month_event_banner.png" alt="이벤트" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <!-- 네 번째 슬라이드의 내용 -->
+                    <div class="carousel-banner d-flex align-items-center">
+                        <div class="carousel-content col-md-6">
+                            <h2>못난이 음식으로 만드는 간식 모음전</h2>
+                            <p>다양한 이벤트에 참여하세요</p>
+                        </div>
+                        <div class="carousel-image col-md-6">
+                            <img src="./img/banner/snacks_banner.png" alt="이벤트" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">이전</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">다음</span>
+            </button>
+        </div>
+        <!-- 카테고리 메뉴 추가 -->
+        <div class="category-menu container">
+            <div class="row justify-content-between align-items-center text-center g-4">
+                <div class="col">
+                    <article class="resquick_content resquick_service">
+                        <div class="category-item carrots-item">
+                            <div class="circle-icon">
+                                <img class="carrots" style="margin-left: 10%;" src="./img/icon/carrots.png" alt="당근">
+                            </div>
+                            <p>당근</p>
+                        </div>
+                    </article>
+                </div>
+                <div class="col">
+                    <div class="category-item potato-item">
+                        <div class="circle-icon">
+                            <img class="potato" src="./img/icon/potato.png" alt="감자">
+                        </div>
+                        <p>감자</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="category-item tomato-item">
+                        <div class="circle-icon">
+                            <img class="tomato" src="./img/icon/tomato.png" alt="토마토">
+                        </div>
+                        <p>토마토</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="category-item sweet_potato-item">
+                        <div class="circle-icon">
+                            <img class="sweetpotato" src="./img/icon/sweetPotato.png" alt="고구마">
+                        </div>
+                        <p>고구마</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="category-item onion-item">
+                        <div class="circle-icon">
+                            <img src="./img/icon/onion.png" alt="양파">
+                        </div>
+                        <p>양파</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="category-item corn-item">
+                        <div class="circle-icon">
+                            <img src="./img/icon/corn.png" alt="옥수수">
+                        </div>
+                        <p>옥수수</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="category-item pumkin-item">
+                        <div class="circle-icon">
+                            <img src="./img/icon/pumkin.png" alt="호박">
+                        </div>
+                        <p>호박</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="category-item coupon-item">
+                        <div class="circle-icon">
+                            <img src="./img/icon/coupon.png" alt="쿠폰">
+                        </div>
+                        <p>쿠폰</p>
+                    </div>
+                </div>
+                <!-- <div class="col">
+                    <div class="category-item pick_up-item">
+                        <div class="circle-icon">
+                            <img src="images/cucumber.png" alt="픽업">
+                        </div>
+                        <p>픽업</p>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </main>
+    <!-- sub page -->
+     <section class="sub-page">
+        <header class="header">
+        </header>
+        <main class="sub-content">
+            <h2 class="sub_title weekend" style="font-weight: bold;">주말특가</h2>
+            <div class="sub_text">3일간 누리는 특별 혜택! 기분 좋은 주말, 기분 좋은 가격!</div>
+            <div class="sub_body">
+                <div class="product-card">
+                    <img src="./img/food/bread.png" alt="bread">
+                    <div class="product-info">
+                        <h3 class="product-title">[정남미명가] BEST 구황작물빵 시그니처 SET 7종X3입(총9입) </h3>
+                        <p class="product-description">밤, 감자, 대파, 마늘, 양파, 고구마, 단호박, 옥수수 각 3입</p>
+                        <p class="product-price">31,000원 <a href="#" class="cold-link">냉장</a></p>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="./img/food/potato.png" alt="potato_food">
+                    <div class="product-info">
+                        <h3 class="product-title">[농림축산식품] 유기농 못난이 감자 2.5kg</h3>
+                        <p class="product-description">흙 속의 보물, 못난이 감자, 외모에 신경 쓰지 않고 자연 그대로 담았다!</p>
+                        <p class="product-price">15,000원 <a href="#" class="cold-link">냉장</a></p>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="./img/food/pumkin_juice.png" alt="pumkin_juice">
+                    <div class="product-info">
+                        <h3 class="product-title">[달다미] BEST 유기농 호박 100% <br> 호박즙 PUMPKIN JUICE </h3>
+                        <p class="product-description">100% 유기농 호박을 갈아서 만들었다</p>
+                        <p class="product-price">11,000원 <a href="#" class="cold-link">냉장</a></p>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="./img/food/carrots.png" alt="carrots_food">
+                    <div class="product-info">
+                        <h3 class="product-title">[농림축산식품] 유기농 못난이 당근 2.5kg</h3>
+                        <p class="product-description">투박한 겉모습과 달리 맛과 영양은 그대로!</p>
+                        <p class="product-price">13,500원 <a href="#" class="cold-link">냉장</a></p>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <main class="sub-content">
+            <h2 class="sub_title MD_PICK" style="font-weight: bold;">MD PICK</h2>
+            <div class="sub_text">지금 제일 잘나가는 MD 추천 상품!</div>
+            <div class="sub_body">
+                <div class="product-card">
+                    <img src="./img/food/pickled_cabbage.png" alt="pickled_cabbage">
+                    <div class="product-info">
+                        <h3 class="product-title">[더반찬] 김장 김치 키트 7.5kg</h3>
+                        <p class="product-description">절임배추 + 양념소</p>
+                        <p class="product-price">55,000원 <a href="#" class="cold-link">냉장</a></p>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="./img/food/cucumber_sobak.png" alt="cucumber_sobak">
+                    <div class="product-info">
+                        <h3 class="product-title">[종가집] 우리땅 오이 소박이 5kg</h3>
+                        <p class="product-description">종가집의 오랜 시간 쌓아온 노하우와 100% 국내산 재료로 더욱 맛있게!</p>
+                        <p class="product-price">55,500원 <a href="#" class="cold-link">냉장</a></p>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="./img/food/stevia_tomatoes.png" alt="stevia_tomatoes">
+                    <div class="product-info">
+                        <h3 class="product-title">[DALCML] 무설탕 스테비아 달큼이 토마토 500g</h3>
+                        <p class="product-description">설탕을 뿌렸나? 달콤 상큼한 달큼이 토마토</p>
+                        <p class="product-price">7,690원 <a href="#" class="cold-link">냉장</a></p>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="./img/food/shine_musket.png" alt="shine_musket">
+                    <div class="product-info">
+                        <h3 class="product-title">[이마트] 국내산 샤인머스켓 1kg (1~2송이)</h3>
+                        <p class="product-description">입안 가득 퍼지는 달콤한 풍미</p>
+                        <p class="product-price">13,500원 <a href="#" class="cold-link">냉장</a></p>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <header class="header">
+        </header>
+        <main class="sub-content">
+            <h2 class="sub_title MD_PICK" style="font-weight: bold;">못난이 농작물로 만드는 집밥!</h2>
+            <div class="sub_text">혼자서도 만들 수 있는 다양한 간단 요리!</div>
+            <div class="sub_body">
+                <div class="product_recipe">
+                    <img src="./img/food/recipe/001.png" alt="recipe1">
+                    <div class="recipe_overlay recipe_01">
+                        <h3>감자채볶음</h3>
+                        <p>고소하고 담백한 감자채볶음으로 한끼 해결!</p>
+                        <a href="#">레시피 보러가기</a>
+                    </div>
+                </div>
+                <div class="product_recipe">
+                    <img src="./img/food/recipe/002.png" alt="recipe2">
+                    <div class="recipe_overlay recipe_02">
+                        <h3>단호박 당근 스튜</h3>
+                        <p>따뜻하고 포근한 맛, <br> 집에서 만드는 단호박 당근 스튜!</p>
+                        <a href="#">레시피 보러가기</a>
+                    </div>
+                </div>
+                <div class="product_recipe">
+                    <img src="./img/food/recipe/003.png" alt="recipe3">
+                    <div class="recipe_overlay recipe_03">
+                        <h3>다이어트 또띠아 피자</h3>
+                        <p>칼로리는 낮추고, 맛은 더한 또띠아 피자!</p>
+                        <a href="#">레시피 보러가기</a>
+                    </div>
+                </div>
+                <div class="product_recipe">
+                    <img src="./img/food/recipe/004.png" alt="recipe4">
+                    <div class="recipe_overlay recipe_04">
+                        <h3>고구마 맛탕</h3>
+                        <p>겉바속촉 꿀조합, <br> 집에서도 간편하게 만드는 인기 디저트!</p>
+                        <a href="#">레시피 보러가기</a>
+                    </div>
+                </div>
+                <div class="product_recipe">
+                    <img src="./img/food/recipe/005.png" alt="recipe5">
+                    <div class="recipe_overlay recipe_05">
+                        <h3>토마토 달걀 볶음</h3>
+                        <p>상큼+부드러움 = 완벽 찰떡 케미!</p>
+                        <a href="#">레시피 보러가기</a>
+                    </div>
+                </div>
+                <div class="product_recipe">
+                    <img src="./img/food/recipe/006.png" alt="recipe6">
+                    <div class="recipe_overlay recipe_06">
+                        <h3>감자 샐러드</h3>
+                        <p>부드럽고 고소한 감자와 신선한 양파의 <br>완벽한 조화</p>
+                        <a href="#">레시피 보러가기</a>
+                    </div>
+                </div>
+                <div class="product_recipe">
+                    <img src="./img/food/recipe/007.png" alt="recipe7">
+                    <div class="recipe_overlay recipe_07">
+                        <h3>콘치즈</h3>
+                        <p>치즈와 옥수수의 환상적인 만남, <br> 입안 가득 행복을~</p>
+                        <a href="#">레시피 보러가기</a>
+                    </div>
+                </div>
+                <div class="product_recipe">
+                    <img src="./img/food/recipe/008.png" alt="recipe8">
+                    <div class="recipe_overlay recipe_08">
+                        <h3>보일링 어니언</h3>
+                        <p>현재 가장 유행하는 MZ식 양파 레시피</p>
+                        <a href="#">레시피 보러가기</a>
+                    </div>
+                </div>
+                <div class="product_recipe">
+                    <img src="./img/food/recipe/009.png" alt="recipe9">
+                    <div class="recipe_overlay recipe_09">
+                        <h3>당근 라페 샌드위치</h3>
+                        <p>신선한 당근 라페로 건강하고 <br>맛있는 샌드위치 한 입</p>
+                        <a href="#">레시피 보러가기</a>
+                    </div>
+                </div>
+                <div class="product_recipe">
+                    <img src="./img/food/recipe/010.png" alt="recipe10">
+                    <div class="recipe_overlay recipe_10">
+                        <h3>토마토 카프레제 <br> 샐러드</h3>
+                        <p>신선한 토마토와 부드러운 모짜렐라, <br>향긋한 바질</p>
+                        <a href="#">레시피 보러가기</a>
+                    </div>
+                </div>
+                <div class="product_recipe">
+                    <img src="./img/food/recipe/011.png" alt="recipe11">
+                    <div class="recipe_overlay recipe_11">
+                        <h3>단호박 라떼</h3>
+                        <p>단호박의 부드러움과 <br>따뜻한 우유가 어우러져 가을을 담은 한 잔</p>
+                        <a href="#">레시피 보러가기</a>
+                    </div>
+                </div>
+                <div class="product_recipe">
+                    <img src="./img/food/recipe/012.png" alt="recipe12">
+                    <div class="recipe_overlay recipe_12">
+                        <h3>허니버터 고구마</h3>
+                        <p>달콤하고 고소한 맛의 완벽한 조화</p>
+                        <a href="#">레시피 보러가기</a>
+                    </div>
+                </div>
+            </div>
+        </main>
+     </section>
+     <footer class="footer">
+        <div class="footer_message">
+            <a href="#">이용약관</a>
+            <!-- <p>|</p> -->
+            <a href="#">개인정보처리방침</a>
+            <!-- <p>|</p> -->
+            <a href="#">사업자정보확인</a>
+            <!-- <p>|</p> -->
+            <a href="#">인재채용</a>
+        </div>
+        <hr>
+        <div class="footer_company">
+            <h4>(주)흠냐링</h3>
+            <p>대표이사 : 조수빈</p>
+            <p>사업자등록번호 : 010-54-13373</p>
+            <p>통신판매업신고 : 2023-동소문동-0000</p>
+            <p>주소 : 서울특별시 관악구 호암로 546 (미림마이스터고등학교)</p>
+            <p>(주)흠냐링은 결제정보의 중개서비스 또는 통신 판매시스템의 제공자로서 통신판매의 당사자가 아니며, 
+                상품의 주문, 배송 및 환불 등과 관련한 의무와 책임은 각 판매자에게 있습니다.</p>
+        </div>
+        <div class="footer_client_message">
+            <h4>고객센터 1566-6575</h3>
+            <p>영업시간 AM 10:00 ~ PM 17:00 (주말 및 공휴일 휴무)</p>
+            <p>점심시간 AM 12:30 ~ PM 13:30</p>
+            <p>고객문의 s2315@e-mirim.hs.kr</p>
+        </div>
+    </footer>
+
+
+<!-- chat widget -->
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+        var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+        (function(){
+        var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+        s1.async=true;
+        s1.src='https://embed.tawk.to/6773a11baf5bfec1dbe507a7/1igdqqld6';
+        s1.charset='UTF-8';
+        s1.setAttribute('crossorigin','*');
+        s0.parentNode.insertBefore(s1,s0);
+        })();
+    </script>
+</body>
+</html>
